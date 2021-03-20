@@ -45,7 +45,7 @@ body
         border: none
 
 .header
-    height: 70vh
+    height: 50vh
     background-image: linear-gradient(to right, $primary, $primary-dark)
     z-index: -3
     .header-text
@@ -109,12 +109,12 @@ body
         width: 70%
     .info-body
         color: white
-        width: 30vw
+        width: 70vw
         padding-top: 10px
 
 
 .contact-section
-    background: white
+    background-color: #fbfbfc
     color: #272727
     padding: 56px
     display: grid
@@ -142,19 +142,46 @@ body
         .contact-input
             padding: 10px 24px
             border: 2px solid #ddd
-    .icon-sm
-        width: 24px
-        padding: 5px
-        display: inline
+    
 
 .contact-info
     justify-content: center
     justify-items: center
+    margin: 32px
+    padding: 32px 0
+    margin-left: auto
+    margin-right: auto
+    width: 500px
+    box-shadow: 0 0 40px #0000001b
+    border-radius: 18px
     .contact-heading
         text-align: center
     .contact-details
         padding: 24px 10px
         justify-items: center
         font-size: 12px
-    .contact-detail
-            display: flex
+        display: block
+        .contact-detail
+            text-align: center
+            justify-content: center
+        .icon-sm
+            display: inline
+            width: 24px
+            padding: 5px
+            justify-self: center
+
+.service
+    padding: 48px
+    .service-heading
+        font-size: 32px
+        padding: 32px 0
+    .text-subheading
+        font-size: 18px 
+        color: red
+        padding: 24px 0
+    .service-video
+        padding: 24px 0
+    .service-detail-list
+        list-style-type: "✔"
+        padding: 24px 24px
+        font-weight: 500
