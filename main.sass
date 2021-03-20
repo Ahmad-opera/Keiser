@@ -69,14 +69,16 @@ body
         text-align: center
     .services-container
         display: grid
-        grid-template-columns: 200px 200px 200px
+        grid-template-columns: 200px 200px 200px 200px 200px
         grid-gap: 10px
+        justify-content: center
         padding-top: 20px
         margin-left: auto
         margin-right: auto
         .service-item
             background-color: #f8f8f8
             box-shadow: 0 0 10px #00000012
+            border-radius: 0
             padding: 20px 0
             transition: all .4s ease-in-out
             &:hover
@@ -89,6 +91,7 @@ body
             .service-info
                 padding: 12px 0
                 text-align: center
+                font-size: 14px
             .icon
                 width: 48px
                 color: #6f6f6f
@@ -96,3 +99,62 @@ body
                 margin-left: auto
                 margin-right: auto
                 text-align: center
+
+.info
+    background: $secondary
+    padding: 64px
+    .info-heading
+        color: white
+        font-weight: 700
+        width: 70%
+    .info-body
+        color: white
+        width: 30vw
+        padding-top: 10px
+
+
+.contact-section
+    background: white
+    color: #272727
+    padding: 56px
+    display: grid
+    grid-template-columns: 3fr 1fr
+    .contact-heading
+        font-size: 24px
+    .contact-form
+        padding: 32px 0
+        .contact-inputs
+            padding: 32px 0
+            display: grid
+            grid-template-columns: 35% 35%
+            grid-gap: 10px
+            textarea
+                grid-column-start: 1
+                grid-column-end: 3
+            button
+                background: #288cd0
+                color: white
+                border: none
+                border-radius: 999px
+                padding: 16px 10px
+                grid-row-start: 6
+                grid-column-start: 2
+        .contact-input
+            padding: 10px 24px
+            border: 2px solid #ddd
+    .icon-sm
+        width: 24px
+        padding: 5px
+        display: inline
+
+.contact-info
+    justify-content: center
+    justify-items: center
+    .contact-heading
+        text-align: center
+    .contact-details
+        padding: 24px 10px
+        justify-items: center
+        font-size: 12px
+    .contact-detail
+            display: flex
