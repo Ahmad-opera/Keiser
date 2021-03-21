@@ -15,17 +15,27 @@
                 <h2 class="nav-title">Kaiser Clinic</h2>
                 <ul class="nav-action-group">
                     <a href="./index.html"><li>Home</li></a>
-                    <li>Our Services</li>
+                    <li class="list-holder">Our Services
+                        <ul class="float-links hide-links">
+                            <a href="./tooth Extraction.html"><li>Tooth Extraction</li></a>
+                            <a href="./dental Filling.html"><li>Dental Filling</li></a>
+                            <a href="./dental Orthodontia.html"><li>Dental Orthodontia</li></a>
+                            <a href="./dentures supplies.html"><li>Dentures Supplies</li></a>
+                            <a href="./inspection.html"><li>Professional Inspection</li></a>
+                        </ul>
+                    </li>
                     <li>Our History</li>
                     <a href="./contact.html"><li>Contact</li></a>
                 </ul>
-                <button>Make an Appointment</button>
+                <a href="./appointment.html"><button>Make an Appointment</button></a>
             </div>
         </nav>
     </section>
     <section>
-        <div class="contact-info">
-            <h1 class="contact-heading">Contact Us</h1>
+        <div class="contact">
+
+            <div class="contact-info">
+                <h1 class="contact-heading">Contact Us</h1>
             <div class="contact-details">
                 <h1 class="contact-detail">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="icon-sm">
@@ -37,6 +47,19 @@
                       </svg></span>https://www.example.com</h1> 
             </div>
         </div>
+    </div>
     </section>
+    <script>
+        window.addEventListener('DOMContentLoaded', (e)=> {
+            const links = document.querySelector('.float-links');
+            const linksHolder = document.querySelector('.list-holder');
+            linksHolder.addEventListener('mouseover', function(i) {
+                links.classList.remove('hide-links')
+            })
+            linksHolder.addEventListener('mouseleave', function(i) {
+                links.classList.add('hide-links')
+            })
+        })
+    </script>
 </body>
 </html>
