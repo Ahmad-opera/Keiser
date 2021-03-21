@@ -291,7 +291,6 @@ footer {
   grid-template-columns: 2fr 1fr;
   justify-content: center;
   justify-items: center;
-  color: white;
 }
 
 footer a {
