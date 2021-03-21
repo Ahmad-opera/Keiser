@@ -85,14 +85,14 @@ body
                 background-color: $primary-dark
                 color: white
                 transition: all .4s ease-in-out
-            &:hover .icon
+            &:hover .icon, &:hover .service-info
                 transition: all .4s ease-in-out
                 color: white
             .service-info
                 padding: 12px 0
                 text-align: center
-                font-size: 17px
-                color: $primary-dark
+                font-size: 14px
+                color: #6f6f6f
             .icon
                 width: 48px
                 color: #6f6f6f
@@ -173,6 +173,9 @@ body
 
 .service
     padding: 48px
+    .service-details
+        background: $primary
+        padding: 24px
     .service-heading
         font-size: 32px
         padding: 32px 0
